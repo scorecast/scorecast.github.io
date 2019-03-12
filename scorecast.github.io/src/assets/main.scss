@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+$white: #ffffff;
+$lightergray: #f5f5f5;
+$lightgray: #f0f0f0;
+$gray: #b9b9b9;
+$darkgray: #707070;
+$black: #000000;
+$crimson: #ac0000;
+$pink: #ffe6e6;
+$lightblue: #83c2ff;
+$green: #88ff00;
+$lightgreen: #efffe6;
+
+//$primary: blue !default;
+$secondary: $gray !default;
+$success: $green !default;
+$info: $lightblue !default;
+$warning: yellow !default;
+$danger: $crimson !default;
+$light: $lightergray !default;
+$dark: $darkgray !default;
+
+$sizes: (
+  10: 10%,
+  15: 15%
+) !default;
+
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes float-screenshot {
+  0% {
+    filter: drop-shadow(5px 10px 5px rgba(0,0,0,0.8));
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(5px 20px 15px rgba(0,0,0,0.2));
+    transform: translatey(-10px);
+  }
+  100% {
+    filter: drop-shadow(5px 10px 5px rgba(0,0,0,0.8));
+    transform: translatey(0px);
+  }
+}
