@@ -116,12 +116,19 @@ export default {
         url("../assets/img/joshua-ness-109310-unsplash.jpg");
       //background-blend-mode: multiply;
       background-size: cover;
+      min-height: 113vh;
     }
     #Why {
       background-image:
         linear-gradient(0.65turn, $black 25%, $darkgray);
+      clip-path: polygon(0 6%,100% 0,100% 100%,0 100%);
+      background-clip: border-box;
+      margin-top: -100px;
     }
     #Video {
+      clip-path: polygon(0 6%,100% 0,100% 100%,0 100%);
+      margin-top: -100px;
+      padding-top: 150px;
       background-color: $lightergray;
     }
     #Footer {
